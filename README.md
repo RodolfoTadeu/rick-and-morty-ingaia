@@ -1,10 +1,9 @@
-# Getting Started with Create React App
+# Aplicação Rick and Morty
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Como rodar a aplicação :arrow_forward:
 
-## Available Scripts
-
-In the project directory, you can run:
+Em caso de download do projeto você precisará instalar as dependências:
+Execute o comando **yarn** para instalar as dependências, assim que terminar a instalação, basta executar **yarn start**
 
 ### `yarn start`
 

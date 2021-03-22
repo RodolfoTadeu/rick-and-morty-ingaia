@@ -20,6 +20,17 @@ export const Container = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 
+  @media only screen and (max-width: 980px) {   
+    margin-left: 0;
+    justify-self: center;
+  } 
+
+  @media only screen and (max-width: 560px) {   
+    width: 20rem;
+    height: 20rem;
+    margin-top: -10rem;
+  }
+
   animation: moveInLeft .8s ease-in-out 2s;        
   animation-timing-function: ease-out;
   animation-fill-mode: backwards;
@@ -36,25 +47,13 @@ export const Container = styled.div`
     }
   }
 
-  @media only screen and (max-width: 980px) {   
-    margin-top: 0;   
-    grid-column: 1/2;
-    grid-row: 1/3;
-    width: 17.8rem;   
-    height: 17.3rem;
-    margin-top: -7rem;
-    justify-self: center;
-    align-content: center;
-    margin-left: 0;
-  }
-
   img {
     width: 100%;   
     height:47rem; 
     grid-column: 1/3;
     grid-row: 1/2;
-    @media only screen and (max-width: 980px) {   
-      height: 11.8rem;
+    @media only screen and (max-width: 560px) {   
+      height: 14rem;
     }
 
   }
@@ -66,9 +65,6 @@ export const Container = styled.div`
     text-align: left;
     grid-column: 1/3;
     grid-row: 2/3;
-    @media only screen and (max-width: 980px) {   
-      padding: 0.2rem 1.3rem
-    }
   }
 
   strong {

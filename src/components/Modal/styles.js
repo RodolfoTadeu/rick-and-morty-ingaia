@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const ModalContainerOverlay = styled.div`
   width: 100%;
-  background: rgba(0, 0, 0, 0.95); 
+  background: rgba(0, 0, 0, 0.85); 
   position: fixed;
-  overflow: hidden;
+  overflow: auto;
   z-index: 1;
   animation: fadeInRight 1s;
   animation-delay: .2s;
@@ -41,34 +41,39 @@ export const ModalContainerOverlay = styled.div`
 `;
 
 export const ModalContainer = styled.div`
-  max-width: 103.4rem;
-  height: 68rem;
   display:grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(8, 1fr);
-  width: 100%;
+  height: 68rem;
+  max-width: 103.4rem;
+  grid-template-columns: repeat(3,1fr);
+  border: 2px solid #161616;
   margin: 0 auto;
-  border: 1px solid #161616;
-  border-radius: 16px; 
+  border-radius: 1.6rem; 
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -3;
 
-  @media only screen and (max-width: 980px) {
+  @media only screen and (max-width: 560px) {
     grid-template-columns: 1fr;
-    grid-template-rows:  7rem repeat(5, 10rem);;
     height: auto;
+    margin: 2rem;
+    row-gap: 3rem;
   }
 
-  .modal {    
+  @media only screen and (max-width: 800px) {
+    margin-top: 30rem;
+}
+
+.closeModal {    
     display: grid;
     grid-column: 1/2;
     z-index: 1;
     grid-row: 1/2;
     margin: 2rem 3rem;
-    @media only screen and (max-width: 980px) {
+    @media only screen and (max-width: 560px) {
       display: none;
     }
   }
 
-  .closeModal {
+  .closeModalIcon {
     animation: moveInRight .8s ease-in-out 2s;        
     animation-timing-function: ease-out;
     animation-fill-mode: backwards;
@@ -77,7 +82,7 @@ export const ModalContainer = styled.div`
     grid-column: 1/2;
     z-index: 1;
     grid-row: 1/2;
-    margin: 2rem 3rem;  
+    margin-top: -13rem;  
 
     @media only screen and (max-width: 1440px) {
       display: none;

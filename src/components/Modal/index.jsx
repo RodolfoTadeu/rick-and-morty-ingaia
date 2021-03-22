@@ -8,8 +8,8 @@ const Modal = ({ children, onClose, open }) => {
     <ModalContainerOverlay open={open} >
      
       <ModalContainer>
-        <CgClose className='closeModal' onClick={onClose} size={32} />
-        <Button className='modal' onClick={onClose} description='Close' />
+        <CgClose className='closeModalIcon' onClick={onClose} size={30} />
+        <Button className='closeModal' onClick={onClose} description='Close' />
         { children }
       </ModalContainer>
     </ModalContainerOverlay>

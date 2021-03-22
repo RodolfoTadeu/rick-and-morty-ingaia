@@ -16,6 +16,8 @@ Você também pode fazer uma busca pelo o nome do personagem, vou deixar alguns 
 * Centaur
 * Collector
 
+Você pode fazer a navegação entre as páginas pela paginação no roda pé
+
 Aqui você pode acessar a aplicação online: https://rick-and-morty-ingaia.vercel.app/
 
 

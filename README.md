@@ -23,4 +23,5 @@ Aqui você pode acessar a aplicação online: https://rick-and-morty-ingaia.verc
 
 ## Tecnologias utilizadas :robot:
 * React 
+* styled components
 * GraphQL
